@@ -4,7 +4,7 @@ export default class StartButton extends Component {
 	render() {
 		return (
 			<div>
-				<button disables='false' onClick={this.props.startTimer}>Start</button>
+				<button disabled={!this.props} onClick={this.props.startTimer}>Start Timer</button>
 			</div>
 		)
 	}
